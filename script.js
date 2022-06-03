@@ -127,3 +127,43 @@ console.log(`Привет, ${userNamee}! How are you? `); // бэктикс об
 // 5. Функции
 // DRY - don't repeat yourself 
 
+//function declaration
+function SayHi() {
+    console.log('Привет, уважаемый пользователь'); // можно вызвать до объявления
+}
+SayHi();
+
+//function expression
+
+let sayhi = function() {
+    console.log('Привет, уважаемый пользователь');
+}
+
+// 5.1 Параметры и аргументы для функции
+//name4 - параметр
+function SayHi3(name4) {  
+    console.log(`Привет, ${name4} Как твои дела?`);
+}
+SayHi3('Artur');
+SayHi3('James');
+
+// 5.2 return - возврат значения
+
+function summ(a,b) {
+    const result = a + b;
+    return result;
+}
+
+let res = summ(10,15);
+console.log (res);
+
+// 5.3. Функция как аргумент
+
+function summ2(a,b) {
+    return a + b;
+}
+console.log(summ2(15,15));
+
+//
+const result2 = summ2(summ2(15,15),summ2(10,10));
+console.log(result2);
