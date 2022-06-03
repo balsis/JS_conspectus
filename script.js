@@ -125,4 +125,5 @@ console.log(`Привет, ${userNamee}! How are you? `); // бэктикс об
 
 
 // 5. Функции
+// DRY - don't repeat yourself 
 
