@@ -218,7 +218,7 @@ autobrands.push('Nissan');
 
 // 7. Циклы
 console.log('start');
-for (let i = 0; i < 5000; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 } 
 console.log('finish');
@@ -228,5 +228,34 @@ for (let i = 1; i < 10; i=i+5) {
     console.log(i);
 } 
 console.log('finish');
-
+console.log('//////');
 // 7.1. Обход массива циклом for
+
+const autobrands_2 = ['Audi','BMW','Mazda','Toyota'];
+
+for (i=0;i<autobrands_2.length;i++){
+    console.log(autobrands_2[i]);
+}
+console.log('//////');
+// 7.2. Обход массива циклом for (of)
+// общепринятое наименование при обходе - item
+for (let item of autobrands_2) {
+    console.log(item);
+}
+console.log('//////');
+// 7.3. Обход массива циклом forEach()
+
+autobrands_2.forEach(function(item, index){
+    console.log(`${item} ===>> ${index}`);
+})
+
+console.log('//////');
+
+// 8 Объекты
+
+var summation = function (num) {
+    for (i=0;i<=num;i++) {
+      let summation=i++  
+      console.log(summation);    
+    }
+  }
