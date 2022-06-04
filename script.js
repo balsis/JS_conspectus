@@ -169,7 +169,34 @@ const result2 = summ2(summ2(15,15),summ2(10,10));
 console.log(result2); 
 
 // 5.4 Самовызывающаяся функция
-
+// в настоящее время редко используется
 (function SayHi4 () {
     console.log('Привет')
-})()
+})();
+
+
+(function (a,b) {
+    console.log (a+b);
+})(10,15);
+
+let summm=(function (a,b) {
+   return a+b;
+})(11,12);
+
+console.log (summm);
+
+//5.5 Стрелочная функция
+
+const arrSayhi = (name5) => {
+    console.log (`Привет, ${name5}`);
+}
+arrSayhi('Artur');
+
+
+// 6. Массивы
+
+const autobrands = ['Audi','BMW','Mazda','Toyota'];
+    console.log (autobrands);
+    console.log (autobrands[0]);
+    console.log (autobrands[3]);
+    console.log (autobrands.length);
