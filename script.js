@@ -200,3 +200,33 @@ const autobrands = ['Audi','BMW','Mazda','Toyota'];
     console.log (autobrands[0]);
     console.log (autobrands[3]);
     console.log (autobrands.length);
+
+// 6.1 Методы массивов
+/*
+array.push(item) - Добавить элемент в конец массива;
+array.unshift() - Добавить элемент в начало массива
+array.pop() - удалить элемент из конца массива;
+array.shift() - удалить элемент из начала массива
+array.splice([start])
+*/
+
+autobrands.push('Nissan');
+    console.log (autobrands);
+
+    autobrands.splice(2,1);
+    console.log (autobrands);   
+
+// 7. Циклы
+console.log('start');
+for (let i = 0; i < 5000; i++) {
+    console.log(i);
+} 
+console.log('finish');
+
+console.log('start');
+for (let i = 1; i < 10; i=i+5) {
+    console.log(i);
+} 
+console.log('finish');
+
+// 7.1. Обход массива циклом for
