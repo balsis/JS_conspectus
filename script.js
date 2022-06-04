@@ -166,4 +166,10 @@ console.log(summ2(15,15));
 
 //
 const result2 = summ2(summ2(15,15),summ2(10,10));
-console.log(result2);
+console.log(result2); 
+
+// 5.4 Самовызывающаяся функция
+
+(function SayHi4 () {
+    console.log('Привет')
+})()
