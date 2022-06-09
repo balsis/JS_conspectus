@@ -259,3 +259,4 @@ var summation = function (num) {
       console.log(summation);    
     }
   }
+  
